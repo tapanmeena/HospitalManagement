@@ -91,6 +91,52 @@
 		display: inline-block;
 		margin: 100px auto;
 	}
+
+	input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=number], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
     </style>	
 <body>
 <div class="main" id="home">
@@ -144,7 +190,7 @@
 								</ul>
 						</li>
 						<li class="m_nav_item menu__item" id="moble_nav_item_5"> <a href="gallery.html" class="menu__link">Departments</a> </li>
-						<li class="m_nav_item menu__item" id="moble_nav_item_6"> <a href="contact.html" class="menu__link"> Contact </a> </li>
+						<li class="m_nav_item menu__item" id="moble_nav_item_6"> <a href="#" data-toggle="modal" data-target ="#myModal9"> Contact </a> </li>
 						<li class="m_nav_item menu__item" id="moble_nav_item_3 dropdown"> <a href="#" class="menu__link dropdown-toggle" data-toggle="dropdown">Log In <b class="caret"></b></a> 
 						   <ul class="dropdown-menu agile_short_dropdown">
 									<li><a href="#" data-toggle="modal" data-target ="#myModal4">Doctor</a></li>
@@ -203,6 +249,44 @@
 		</div>
 	</div>
 </div> 
+
+<!-- Contact form-->
+<div id="myModal9" class="modal fade">
+		<div class="modal-dialog modal-login1">
+			<div class="modal-content">
+				<div class="modal-header1">	
+				<br>			
+					<h4 >Contact us</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<br>			
+				</div>
+				<div class="modal-body">
+					<form action="#" method="post">
+						<div class="form-group">
+							<input type="text" id="fname" name="firstname" placeholder="First name..">
+						</div>
+						<div class="form-group">
+							<input type="text" id="lname" name="lastname" placeholder="Last name..">				
+						</div>
+						<div class="form-group">
+								<input type="email" id="mail" name="email" placeholder="Your e-mail..">
+						</div>
+						<div class="form-group">
+								<input type="number" id="number" name="num" placeholder="Your Phone number..">
+						</div>
+						<div class="form-group">
+								<textarea id="subject" name="subject" placeholder="Your Query.." style="height:50px"></textarea>
+						</div>
+						<div class="form-group">
+								<input type="submit" value="Submit">
+						</div>
+						
+					</form>				
+					
+				</div>
+			</div>
+		</div>
+	</div> 
 
 <!-- Admin Log In -->
 <div id="myModal8" class="modal fade">
