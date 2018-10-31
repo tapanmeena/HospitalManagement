@@ -135,7 +135,12 @@
 					<nav class="menu menu--sebastian">
 					<ul id="m_nav_list" class="m_nav menu__list">
 						<li class="m_nav_item menu__item menu__item--current" id="m_nav_item_1"> <a href="dashboard.html" class="menu__link"> Home </a></li>
-						<li class="m_nav_item menu__item" id="moble_nav_item_4"> <a href="appointment.html" class="menu__link">Appointment</a></li>
+						<li class="m_nav_item menu__item" id="moble_nav_item_3 dropdown"> <a href="appointment.html" class="menu__link dropdown-toggle" data-toggle="dropdown">Appointment<b class="caret"></b></a>
+							 <ul class="dropdown-menu agile_short_dropdown">
+								 <li><a href="appointment.php">Pending Appointment</a></li>
+								 <li><a href="#" data-toggle="modal" data-target ="#myModal5">Appointment History</a></li>
+							 </ul>
+					 </li>
 						<li class="m_nav_item menu__item" id="moble_nav_item_3 dropdown"> <a href="#" class="menu__link dropdown-toggle" data-toggle="dropdown">Room <b class="caret"></b></a>
 							 <ul class="dropdown-menu agile_short_dropdown">
 								 <li><a href="#" data-toggle="modal" data-target ="#myModal4">Modify Room No.</a></li>
@@ -145,15 +150,15 @@
 					 </li>
 					 <li class="m_nav_item menu__item" id="moble_nav_item_3 dropdown"> <a href="#" class="menu__link dropdown-toggle" data-toggle="dropdown">Pending SignUp Requests<b class="caret"></b></a>
 							<ul class="dropdown-menu agile_short_dropdown">
-								<li><a href="#" data-toggle="modal" data-target ="#myModal4">Doctor</a></li>
-								<li><a href="#" data-toggle="modal" data-target ="#myModal5">Receptionist</a></li>
-								<li><a href="#" data-toggle="modal" data-target ="#myModal6">Nurse</a></li>
+								<li><a href="doc_sup.php">Doctor</a></li>
+								<li><a href="recep_sup.php">Receptionist</a></li>
+								<li><a href="nurse_sup.php" >Nurse</a></li>
 							</ul>
 					</li>
 					<li class="m_nav_item menu__item" id="moble_nav_item_3 dropdown"> <a href="#" class="menu__link dropdown-toggle" data-toggle="dropdown">Users<b class="caret"></b></a>
 						 <ul class="dropdown-menu agile_short_dropdown">
 							 <li><a href="#" data-toggle="modal" data-target ="#myModal4">Patient</a></li>
-							 <li><a href="#" data-toggle="modal" data-target ="#myModal5">Doctor</a></li>
+							 <li><a href="userlist.php" >Doctor</a></li>
 							 <li><a href="#" data-toggle="modal" data-target ="#myModal6">Nurse</a></li>
 							 <li><a href="#" data-toggle="modal" data-target ="#myModal6">Receptionist</a></li>
 						 </ul>

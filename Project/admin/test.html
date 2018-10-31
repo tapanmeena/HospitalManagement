@@ -1,0 +1,30 @@
+<html>
+<head>
+<script>
+
+function showAllLogin() {
+    str='Login';
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("showAllLogin").innerHTML = this.responseText;
+        }
+    };
+    xmlhttp.open("POST", "test.php?q=" + str, true);
+    xmlhttp.send();
+}
+
+</script>
+</head>
+<body>
+
+<h1> Show all Logins </h1>
+<span id="showAllLogin">
+    hello i am here<script type="text/javascript">
+    showAllLogin();
+    </script>
+</span>
+
+<h1> Doctor </h1>
+</body>
+</html>
